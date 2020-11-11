@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        background-color: #e2e2d1;
+    }
+    /* upar part */
+div.background {
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eb69275a-9316-44e3-af09-d8d4c98e18bb/d1iual0-657bfc95-ff6d-4e5b-9dbb-c6edbc72141b.png/v1/fill/w_500,h_500,q_80,strp/dark_smoke_and_cloud_backround_by_bombkirby_d1iual0-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTAwIiwicGF0aCI6IlwvZlwvZWI2OTI3NWEtOTMxNi00NGUzLWFmMDktZDhkNGM5OGUxOGJiXC9kMWl1YWwwLTY1N2JmYzk1LWZmNmQtNGU1Yi05ZGJiLWM2ZWRiYzcyMTQxYi5wbmciLCJ3aWR0aCI6Ijw9NTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.s9oTDD__KqS-fbxCJJd8xkDJO9UsCAf0KSCwV2Qd7kw) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #7e7c71;
+  border: 4px solid black;
+  opacity: 0.5;
+}
+
+div.transbox h1 {
+  margin: 5%;
+  font-weight: bold;
+  color: #070707;
+  font-size: 600%;
+  text-align: center;
+}
+/* nav bar part */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(136, 128, 129);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(238, 226, 226);
+}
+
+.active {
+  background-color: #7b5ceb;
+}
+
+/* dropdown */
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+/* responsive image gallary */
+div.gallery {
+  border: 4px solid rgb(58, 53, 53);
+  background-color: wheat;
+
+}
+
+div.gallery:hover {
+  border: 4px solid rgb(157, 164, 228);
+}
+
+div.gallery img {
+  
+  width: 100%;
+  
+  height: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* contact form */
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4b504b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #585c59;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<!-- upar part -->
+<div class="background">
+  <div class="transbox">
+    <h1>MSME MART</h1>
+  </div>
+</div>
+<!-- nav bar -->
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li> 
+      <!-- dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn">product 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">MAIZE</a>
+          <a href="#">MILK</a>
+          <a href="#">BANANA</a>
+          <a href="#">MANGO</a>
+        </div>
+      </div> 
+    <li><a href="#service">service</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">contact</a></li>
+    <li style="float:right"><a href="#login">Login</a></li>
+    <li style="float:right"><a href="#sign_up"> SignUp</a></li>
+  </ul>
+
+ <!-- responsive gallary -->
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://img.apmcdn.org/9095ef70b723293b763f9b7e407efc6e30eb8357/uncropped/1de40e-20060810-cornplant.jpg">
+      <img src="https://img.apmcdn.org/9095ef70b723293b763f9b7e407efc6e30eb8357/uncropped/1de40e-20060810-cornplant.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">MAIZE</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://i0.wp.com/www.myhealthbeijing.com/wp-content/uploads/2014/08/Pouring-milk-in-the-glass.jpg">
+      <img src="https://i0.wp.com/www.myhealthbeijing.com/wp-content/uploads/2014/08/Pouring-milk-in-the-glass.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">MILK</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://koolaufarmers.com/wordpress/wp-content/uploads/2015/07/banana-trees-289022372.jpg">
+      <img src="http://koolaufarmers.com/wordpress/wp-content/uploads/2015/07/banana-trees-289022372.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">BANANA</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://c1.staticflickr.com/3/2664/4093571989_178b2dd403_z.jpg">
+      <img src="https://c1.staticflickr.com/3/2664/4093571989_178b2dd403_z.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">MANGO</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This website is created for msme business industries   </p>
+</div>
+<br>
+<br>
+<br>
+<!-- contact form -->
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="#text">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="area">Area/Zone</label>
+    <select id="state" name="state">
+      <option value="bihar">xyz</option>
+      <option value="bihar">yzx</option>
+      <option value="bihar">zxy</option>
+      <option value="bihar">zxy</option>
+      <option value="bihar">zxy</option>
+      <option value="bihar">zxy</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:75px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<!-- footer -->
+<div class="center" id="Contact">
+
+  <h2 class="text-center">Contact Us</h2>
+  <p class="text-center">Phone: +91-9113101543</p>
+  <a href="https://wa.me/9113101543 " target="_blank"><button style="font-size:20px ;margin-left:auto;margin-right:auto;display:block;" class="btn btn-dark">
+      Contact on WhatsApp <i class="fa fa-whatsapp"></i></button></a>
+  <p class="text-center">Email: chalhatt333@gmail.com</p>
+  <p class="text-center">Regd. Office: BIHAR,854326</p>
+  
+</div>
+
+
+  
+
+</body>
+</html>
